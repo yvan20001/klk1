@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+}
+h1{
+    font-family: 'Montagu Slab', serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+    height: 20vh;
+    background-color: blue;
+    
+}
+nav{
+    margin-right: 200px;
+    position: fixed;
+    z-index: 400;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.search{
+    width: 20vw;
+    border: 1px solid black;
+}
+
+header button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.oculto{
+    display: flex;
+    flex-direction: column;
+    height:100px;
+    gap: 1px;
+    display: none;
+}
+.categorias:hover .oculto{
+    display: block;
+
+
+}
+
+.grid-section{
+    padding: 10px;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  
+
+}
+.grid-section img{
+    width: 250px;
+    height: 250px;
+}
+
+.seccion-principal{
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background-color: blue;
+    
+}
+.seccion-principal img{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    width: 900px;
+    height: 500px;
+
+}
+
+.rotate{
+    position: absolute;
+    right: 5px;
+    top: 300px;
+    transform: rotate(-90deg);
+}
+
+.blue{
+
+    font-weight: bolder;
+}
+
+.blue-2{
+    font-weight: lighter;
+}
+
+.div-iconos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.div-iconos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+.vida{
+    top: 40px;
+    left: 140px;
+    position: absolute;
+    width: 600px;
+    z-index: 10;
+    color: white;
+}
+
+.div-vida-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+footer{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: blue;
+    
+}
+.div-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
